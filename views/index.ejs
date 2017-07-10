@@ -1,35 +1,114 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Flat Search Form</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
-  
-</head>
 
-<body>
-  <html>
+
+<html lang="en">
   <head>
-    <title>Flat Search Form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Webscraper</title>
+    <style type="text/css">
+      .avatar
+{
+  width: 100%;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+* {
+  font-family: Roboto;
+}
+
+.content h1 {
+  font-weight: 500;
+  text-align: center;
+}
+
+svg#donut-chart {
+  display: block;
+  margin: 0 auto;
+}
+
+text.inner-circle {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.arc {
+  cursor: pointer;
+}
+.arc:hover {
+  opacity: .85;
+}
+.arc text {
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+}
+
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.css" rel="stylesheet">
   </head>
+
   <body>
-    <h1>Flat Search Form</h1>
-    <form method="POST">
-    	<div class="field" id="searchform">
-    	
-		      <input type="text" name="url" id="searchterm" placeholder="enter the url" />
-		      <input type="text" name="div" id="divid" placeholder="enter the div to be scraped" />
-		      <button type="Submit" id="search">Submit</button>
-		      
-  	  </div>
-  	  </form>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Webscraper</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+     <div class="container">
+
+      <div class="searchContainer">
+
+        <div id="container">
+        <h3>Instruction:</h3>
+        <hr>
+        <h4>To Identify the div id :</h4>
+        <ul>
+    <li> * Right click and select inspect element</li>
+    <li> * Find where the content is and identify the id of the div</li>
+    <li> * Enter the url and div in the search bar</li>
+    <li> * Enjoy!!</li>
+    </ul>
+    </div>
+    <br>
+        <p class="lead">Enter The Url and Div id where the content to be scraped is present</p>
+        <hr>
+        <form method="post">
+         <input type="text" name="url" class="form-control" placeholder="URL"> 
+         <input type="text" name="div" class="form-control" placeholder="Div ID"> 
+         <input type="submit" class="btn btn-primary" value="send"> 
+         </form>
+      </div>
+      <br>
+      <div id="profile">
+      </div>
+
+    </div><!-- /.container -->
+
+   <script src="https://code.jquery.com/jquery-3.1.1.js"  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/scripts.js"></script>
+   
   </body>
 </html>
-  
-  
-</body>
-</html>
+
+

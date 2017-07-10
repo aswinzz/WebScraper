@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6, p, a {
+  margin: 0 20px;
+  margin-bottom:8px;
+}
+p {
+  text-indent:10px;
+}
+p:last-child {
+  margin-bottom:0px;
+}
+img {
+  width:80%;
+  margin:0 20px;
+}
+.header {
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:50vh;
+}
+.bar {
+  position: absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:20px;
+}
+.page {
+  position: absolute;
+  top:0px;
+  left:40px;
+  right:40px;
+}
+.title {
+  width:100%;
+  max-width:800px;
+  text-align:left;
+  font-size:54px;
+  margin-top:50px;
+  color:#ffffff;
+  margin-bottom:40px;
+}
+.sheet {
+  width:100%;
+  max-width:800px;
+  margin-bottom:40px;
+  min-height:200px;
+  padding:20px 0;
+  border:1px solid #ccc;
+  box-shadow:0 0 8px 0 rgba(0,0,0,0.2);
+  border:1px solid #ccc;
+  text-align:left;
+}
+.sub {
+  margin:0 20px;
+  margin-top:-8px;
+  margin-bottom:8px;
+  text-indent:0px;
+  color:rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 550px) {
+  .page { 
+    left:0px;
+    right:0px;
+  }
+  .sheet {
+    border:none;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+  }
+  .title {
+    margin-left:10px;
+    font-size:36px;
+  }
+} 

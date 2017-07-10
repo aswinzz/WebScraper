@@ -23,13 +23,8 @@ router.post('/',function(req,res,next){
 	var divtext = div.text();
 	var jsondata = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(divtext));
 	console.log(divtext);
-	fs.writeFile('data.json', 	jsondata, (err) => {
-  if (err) throw err;
-  console.log('The file has been saved!');
-  
 	
-}); 
- var urls = 'data:' + jsondata + 'download="data.json"';
+ var urls = 'data:' + jsondata;
  res.render('result',{ data: divtext, urls: urls})   
 })
 })
