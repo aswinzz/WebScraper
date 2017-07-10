@@ -21,14 +21,16 @@ router.post('/',function(req,res,next){
 	var titletext = title.text();*/
 	var div = $('.'+req.param('div'));
 	var divtext = div.text();
-	res.render('result', { data: divtext });
+	var jsondata = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(divtext));
 	console.log(divtext);
-	jsondata = JSON.stringify({ data: divtext }); 
-	fs.writeFile('data.json', jsondata, (err) => {
+	fs.writeFile('data.json', 	jsondata, (err) => {
   if (err) throw err;
   console.log('The file has been saved!');
+  
+	
 }); 
-    
+ var urls = 'data:' + jsondata + 'download="data.json"';
+ res.render('result',{ data: divtext, urls: urls})   
 })
 })
 module.exports = router;
